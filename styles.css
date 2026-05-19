@@ -411,6 +411,77 @@ p {
   background: var(--soft);
 }
 
+.smoke-route {
+  background: #f8fbf7;
+}
+
+.route-steps,
+.truth-panel,
+.evidence-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.route-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.route-steps article,
+.truth-card,
+.evidence-grid article {
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: 0 18px 42px rgba(20, 31, 27, 0.08);
+}
+
+.route-steps article {
+  min-height: 250px;
+  padding: 26px;
+}
+
+.route-steps span,
+.truth-card span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.truth-panel {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 20px;
+}
+
+.truth-card {
+  min-height: 280px;
+  padding: 30px;
+}
+
+.truth-card.positive {
+  background: #10251d;
+  border-color: rgba(21, 201, 121, 0.35);
+  color: var(--white);
+}
+
+.truth-card.positive p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.truth-card.positive span {
+  color: var(--green);
+}
+
+.truth-card.caution {
+  background: #fff7e8;
+  border-color: rgba(215, 150, 47, 0.42);
+}
+
+.truth-card.caution span {
+  color: var(--amber);
+}
+
 .scene-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -520,6 +591,41 @@ p {
   color: var(--white);
 }
 
+.evidence {
+  background: #edf2ef;
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.evidence-grid article {
+  padding: 24px;
+}
+
+.evidence-grid p {
+  margin-bottom: 0;
+}
+
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--green-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
 .contact {
   justify-content: space-between;
   padding-top: 90px;
@@ -575,6 +681,12 @@ p {
   .scene-grid,
   .flow-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .route-steps,
+  .truth-panel,
+  .evidence-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -646,6 +758,9 @@ p {
   .scene-grid,
   .spec-list,
   .flow-list,
+  .route-steps,
+  .truth-panel,
+  .evidence-grid,
   .alert-strip {
     grid-template-columns: 1fr;
   }

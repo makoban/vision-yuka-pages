@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vision Yuka | 床面LED防災誘導サイネージ</title>
-    <meta name="description" content="Vision Yukaは、LED Rolling Floorを使った床面防災誘導サイネージです。平常時はホテルや商業施設の空間演出、非常時は避難誘導や緊急地震速報の行動表示に切り替わります。">
+    <meta name="description" content="Vision Yukaは、LED Rolling Floorを使った床面防災誘導サイネージです。平常時はホテルや商業施設の空間演出、非常時は煙の中でも足元に避難誘導や緊急地震速報の行動表示を出します。">
     <link rel="canonical" href="https://vision-yuka.bantex.jp/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vision Yuka | 床面LED防災誘導サイネージ">
@@ -19,7 +19,7 @@
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Vision Yuka",
-        "description": "LED Rolling Floorを使った床面防災誘導サイネージ。平常時は空間演出や案内、非常時は避難誘導や緊急地震速報の行動表示に切り替わります。",
+        "description": "LED Rolling Floorを使った床面防災誘導サイネージ。平常時は空間演出や案内、非常時は煙の中でも足元に避難誘導や緊急地震速報の行動表示を出します。",
         "brand": {
           "@type": "Brand",
           "name": "BANTEX"
@@ -106,6 +106,43 @@
             <p>気象庁防災情報XMLフォーマットなど、公式防災データを受信して館内表示へつなぐ構成を想定できます。警報・注意報、地震、津波など、施設に必要な情報種別を選び、床面表示の切替条件として設計します。</p>
           </div>
           <p class="note">実運用では、緊急地震速報や防災設備との連動方法、表示条件、停電時の扱いを施設ごとに設計します。</p>
+        </div>
+      </section>
+
+      <section class="section smoke-route" id="route">
+        <div class="section-copy centered">
+          <p class="eyebrow">Visible Evacuation Route</p>
+          <h2>煙で上が見えない時、床が直接見える誘導路になる。</h2>
+          <p>火災時は煙が天井側からたまり、床に近い低い位置は比較的見通しがきくとされています。だから、かがんで動く、床を見る、緑の誘導路を追う、という行動に合わせた表示が有効です。</p>
+        </div>
+        <div class="route-steps" aria-label="煙の中で床面誘導を見る流れ">
+          <article>
+            <span>01</span>
+            <h3>壁や天井サインが見えにくい</h3>
+            <p>煙は上方へ早く広がるため、天井付近の表示や遠くの壁面表示は見失いやすくなります。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>かがんで、口と鼻を覆って進む</h3>
+            <p>消防機関の避難指導では、煙を吸わないよう低い姿勢で避難することが基本とされています。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>足元の緑の誘導路を見る</h3>
+            <p>床面に矢印と非常口アイコンを出すことで、視線が下がった状態でも進む方向を直感的に伝えます。</p>
+          </article>
+        </div>
+        <div class="truth-panel">
+          <article class="truth-card positive">
+            <span>言えること</span>
+            <h3>低姿勢の避難と、床面表示は相性が良い。</h3>
+            <p>資料上はDC24V/36V入力、IP63、低電圧入力、滑り止め・反射防止が示されています。床面に補助誘導を出す設計は、既存の誘導灯を補う提案として説明できます。</p>
+          </article>
+          <article class="truth-card caution">
+            <span>言い切らないこと</span>
+            <h3>電源喪失時に必ず安全・点灯継続とは断定しない。</h3>
+            <p>停電時にも表示を続けるには、非常電源、UPS、蓄電池、自動切替、漏電・過電流保護、床下配線の保護、アクリルカバーの防火・耐熱・滑り性能を施設ごとに確認します。</p>
+          </article>
         </div>
       </section>
 
@@ -220,6 +257,29 @@
           <h2>誘導灯の代替ではなく、避難行動を補助する床面サイネージです。</h2>
         </div>
         <p>本提案は、消防法令上必要な誘導灯・誘導標識・非常照明を置き換えるものではありません。既存設備に追加する補助誘導として、所轄消防署、設計者、防災設備会社と確認しながら導入します。</p>
+      </section>
+
+      <section class="section evidence">
+        <div class="section-copy centered">
+          <p class="eyebrow">Evidence</p>
+          <h2>営業表現で言えることを、根拠ベースに絞る。</h2>
+        </div>
+        <div class="evidence-grid">
+          <article>
+            <h3>煙の中は低い姿勢で避難</h3>
+            <p>東京消防庁と消防庁は、煙を吸わないよう口と鼻を覆い、姿勢を低くして避難することを案内しています。</p>
+            <p class="source-links"><a href="https://www.tfd.metro.tokyo.lg.jp/learning/contents/evacuation/contents03_2.html">東京消防庁</a><a href="https://www.fdma.go.jp/relocation/bousai_manual/lat/later32.html">消防庁</a></p>
+          </article>
+          <article>
+            <h3>床下配線だけで安全とはしない</h3>
+            <p>電源喪失時の点灯継続は、非常電源や蓄電池などの別設計が必要です。床面サイネージ単体では法定誘導灯の代替にしません。</p>
+            <p class="source-links"><a href="https://www.fdma.go.jp/laws/tutatsu/assets/110921yobou_245.pdf">消防庁通知</a></p>
+          </article>
+          <article>
+            <h3>製品仕様から言える範囲</h3>
+            <p>製品資料では、DC24V/36V入力、IP63、耐荷重3,000kg/㎡、滑り止め・反射防止が確認できます。</p>
+          </article>
+        </div>
       </section>
 
       <section class="contact" id="contact">
