@@ -545,6 +545,45 @@ p {
   line-height: 1.36;
 }
 
+.pitch-note {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 8px;
+  background: #10251d;
+  color: var(--white);
+}
+
+.pitch-note strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--green);
+  font-size: 0.9rem;
+}
+
+.pitch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pitch-chips span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.pitch-chips b {
+  margin-right: 6px;
+  color: var(--white);
+}
+
 .flow {
   background: #f6f0e5;
 }
