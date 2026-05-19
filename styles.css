@@ -180,6 +180,31 @@ p {
   flex-wrap: wrap;
 }
 
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.trust-badges span,
+.official-data {
+  border: 1px solid rgba(21, 201, 121, 0.38);
+  background: rgba(21, 201, 121, 0.1);
+}
+
+.trust-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 0.86rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -358,6 +383,24 @@ p {
   text-align: center;
   background: rgba(215, 150, 47, 0.14);
   border-color: rgba(215, 150, 47, 0.34);
+}
+
+.official-data {
+  margin: 20px 0 18px;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.official-data strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green);
+}
+
+.official-data p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.94rem;
 }
 
 .note {
@@ -564,6 +607,11 @@ p {
 
   .hero-lead {
     font-size: 1rem;
+  }
+
+  .trust-badges span {
+    font-size: 0.78rem;
+    white-space: normal;
   }
 
   .hero-specs {
