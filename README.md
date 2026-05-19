@@ -13,3 +13,8 @@ LP visuals were generated with Codex built-in gpt-image2 image generation and co
 `/Users/banmako/.codex/generated_images/019e3d60-be90-7231-97db-9929945b8742`
 
 The compressed web images live under `assets/generated/`. The copied PNG sources live under `assets/source/`.
+
+Latest product flyer visual:
+
+- `assets/generated/floor-display-product-flyer.jpg`
+- `assets/source/floor-display-product-flyer.png`
